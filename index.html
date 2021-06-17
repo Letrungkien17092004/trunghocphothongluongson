@@ -4,39 +4,201 @@
         <title>My Website</title>
     </head>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        div {
+        
+       
+        .conteiner {
             display: flex;
             width: 100%;
-            height: 75vh;
+            height: 100vh;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: aqua;
+            padding: 50px 0px 50px 0px;
         }
-        
+
+        .btn {
+            background-color: orangered;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .btn__pro {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .pro_2 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        .btn:hover {
+            background-color: rgb(248, 131, 88);
+        }
+        a {
+            text-decoration: none;
+        }
+        td {
+            display: table-cell;
+            vertical-align: inherit;
+            text-align: center;
+            background-color: red;    
+            }
+        td,th {
+            border: 5px solid rgb(7, 143, 153);
+            padding: 10px;
+            min-width: 100px;
+        }
+        th {
+            text-align: center;
+            background-color: red;
+            
+        }
+
+        table {
+            color: white;
+            cursor: default;
+            background-color: white; 
+            border: 5px solid pink;
+            padding: 0px;
+        }
+        h2 {
+            margin: 20px;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+
+        td {
+            background-color: white;
+        }
+        dl {
+            background-color: white;
+        }
+        dt {
+            text-align: center;
+            background-color:  rgb(88, 148, 172);
+            margin-bottom: 20px;
+            line-height: 50px;
+            cursor: default;
+        }
     </style>
     <body>
-        <a href="https://www.w3schools.com/" style="
-            background-color: orangered;
-            color: white;
-            text-align: center;
-            margin-top: 100px;
-            border: 3px solid aqua;
-            padding: 20px;
-            display: block;
-            cursor: default;
-            " target="_blank">
-            Trang web học tập miễn phí</a>
+            <div id="top" class="conteiner">
+                <h3>Trung Học Phổ Thông Lương Sơn</h3>
+                <a href="https://animehay.tv/phim/quyen-tu-luong-f3412.html"><img src="https://animehay.tv/uploads/images/2021/06/quyen-tu-luong-cover-1622859458.png" alt=""></a>
+                <button title="Phim hình 3D trung quôc" class="btn" onclick="document.location='https://animehay.tv/phim/quyen-tu-luong-f3412.html'">Xem tại đây</button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8YHEccMLSnTtT4Y9c1b3kzJMOSRof0azYQ&usqp=CAU" alt="">
+                <button title="W3chool" class="btn">Tài liệu học tập miễn phí</button>
+            </div> 
+            <a class="btn btn__pro" href="#top">Về đầu trang</a>
+            <a class="btn pro_2" href="#bot">xuống cuối trang</a>
+            
+            <div class="conteiner">
 
-    </body>
-    <div class="conteiner">
-        <h3>Trung Học Phổ Thông Lương Sơn</h3>
-        <a href="https://animehay.tv/phim/quyen-tu-luong-f3412.html"><img src="https://animehay.tv/uploads/images/2021/06/quyen-tu-luong-cover-1622859458.png" alt=""></a>
-        
-    </div>
+                <table>
+                    <h2>Thời khóa biểu</h2>
+                    <tr>  
+                        <th>Tiết</th>
+                        <th>Thứ 2</th>
+                        <th>Thứ 3</th>
+                        <th>Thứ 4</th>
+                        <th>Thứ 5</th>
+                        <th>Thứ 6</th>
+                        <th>Thứ 7</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>hóa</td>
+                        <td>lý</td>
+                        <td>sử</td>
+                        <td>sinh</td>
+                        <td>công nghệ</td>
+                        <td>Hết</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>2</th>
+                        <td>hóa</td>
+                        <td>lý</td>
+                        <td>sử</td>
+                        <td>sinh</td>
+                        <td>công nghệ</td>
+                        <td>Hết</td>
+                    </tr>
+                    
+                </div>
+            <div class="container">
+            </table>
+            <h2>bảng 2</h2>
+            <table>
+                <tr>
+                    <th rowspan="2">test</th>
+                    <th colspan="2">test</th>
+                    <th rowspan="2">test</th>
+                </tr>
+                <tr>
+                    <th>test</th>
+                    <th>test</th>  
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <th colspan="100%">
+                        <img src="http://thptluongson.phutho.edu.vn/publish/thumbnail/61870/320x213xdefault/upload/61870/20190128/f8fa615154478d80bfc30f0c78bfe1701568076649321_KUQZ5522.JPEG" alt="">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="100%">
+                        <a href="mailto:ammenki31@gmail.co" class="btn">Gửi email</a>
+                    </th>
+                </tr>
+            </table>
+            </div>
+            <div class="conteiner">
+                <dl>
+                    <dt>ĐIỀU 1</dt>
+                    <dd>1. Kính trọng người lớn, lễ phép với thầy cô và tôn trọng các em nhỏ.</dd>
+                    <dd>2. Sống chan hoà, thẳng thắn, trung thực, đoàn kết, thương yêu giúp đỡ bạn bè.</dd>
+                    <dd>3. Gương mẫu ở mọi lúc, mọi nơi, luôn giữ gìn và phát huy truyền thống của dân tộc nói chung và của nhà trường nói riêng.</dd>
+                    <dt>ĐIỀU 2</dt>
+                    <dd>1.Đi học đúng giờ (Có mặt ở trường trước 15 phút khi buổi học bắt đầu), nghỉ học phải có lý do, phải có giấy xin phép được phụ huynh hoặc của giáo viên chủ nhiệm ký xác nhận.</dd>
+                    <dt>ĐIỀU 3</dt>
+                    <dd>1. Phải học và làm bài đầy đủ.</dd>
+                    <dd>2. Phải có đầy đủ đồ dùng và phương tiện học tập cho buổi học ngày hôm đó.</dd>
+                    <dd>3. Giữ gìn vệ sinh chung của trường, lớp.</dd>
+                    <dd>4. Giữ gìn bảo vệ của công của trường, lớp.</dd>
+                </dl>
+            </div>
+            <span id="bot"></span>
+            
     
 </html>
